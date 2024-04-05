@@ -1,0 +1,89 @@
+ion-content {
+  --background: #ececec; 
+}
+ion-toolbar{
+  --background:  #fff;;
+  color: #000;
+}
+  
+  ion-searchbar {
+    --background: #ffffff;
+    color: #000;
+    
+  
+  }
+  input.searchbar-input.sc-ion-searchbar-md {
+    border-radius: 20px;
+  }
+  h5{
+    color: #000;
+    font-size: 19px;
+  }
+  .notes{
+    display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+ion-card{
+  
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
+  border-radius: 20px;
+  --background: #fff;
+             
+}
+.card {
+    /* Adjust as needed */
+    margin-bottom: 20px;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+  }
+  ion-card-content{
+    background: #ffffff;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+  }
+  ion-card-content p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+ .img{
+  padding: 0px 0px 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+ }
+
+ @media screen and (min-width: 768px) {
+  /* For screens larger than 768px (e.g., tablets and desktops) */
+  .card {
+    width: calc(33.33% - 20px); /* Adjust width for larger screens */
+    /* Here, 33.33% ensures three cards per row, and subtracting 20px allows space between cards */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* For screens smaller than 768px (e.g., smartphones) */
+  .card {
+    width: calc(50% - 20px); /* Adjust width for smaller screens */
+    /* Here, 50% ensures two cards per row, and subtracting 20px allows space between cards */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* For screens smaller than 480px (e.g., small smartphones) */
+  .card {
+    width: calc(50%); /* Take full width on smaller screens */
+    max-width: none; /* Remove max-width constraint */
+  }
+}

@@ -6,7 +6,27 @@ const routes: Routes = [
   {
     path: '',
     component: Tab1Page,
-  }
+  },
+  {
+    path: 'chaque-produi',
+    loadChildren: () => import('./chaque-produi/chaque-produi.module').then( m => m.ChaqueProduiPageModule)
+  },
+  {
+    path: 'all-notes',
+    loadChildren: () => import('./all-notes/all-notes.module').then( m => m.AllNotesPageModule)
+  },
+  
+  {
+    path: 'chanel',
+    loadChildren: () => import('./chanel/chanel.module').then( m => m.ChanelPageModule)
+  },
+  {
+    path: 'chaque-note',
+    loadChildren: () => import('./chaque-note/chaque-note.module').then( m => m.ChaqueNotePageModule)
+  },
+
+
+ 
 ];
 
 @NgModule({
