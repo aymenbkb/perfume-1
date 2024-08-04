@@ -61,7 +61,7 @@ export class Tab1Page implements OnInit {
         this.products = [];
       }
     });
-    this.showResults = false; // Hide results when search input is cleared
+    this.showResults = false; 
   }
 
   ngOnInit(): void {
@@ -83,7 +83,7 @@ export class Tab1Page implements OnInit {
       this.checkDataLoaded(); // Check if all data is loaded
     });
 
-    // Fetch notes
+   
     const notesRef = ref(database, 'notes');
     onValue(notesRef, (snapshot) => {
       const data = snapshot.val();
