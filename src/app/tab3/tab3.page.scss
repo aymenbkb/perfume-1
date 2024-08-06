@@ -1,0 +1,40 @@
+ion-content {
+    --background: #e8e8e8; /* Replace with your desired background color */
+  }
+  ion-toolbar{
+    --background: #fcfcfc;
+    color: #000;
+  }
+  
+  
+  ion-searchbar {
+    --background: #ffffff; /* Replace with your desired background color */
+    color: #000;
+   
+       
+        overflow: hidden; padding-top: 10px;     margin-top: 4px;
+  }
+
+.brands{
+    display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+.card-brand {
+    width: 48%; /* Adjust as needed */
+    margin-bottom: 20px;
+   
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  ion-card{
+    border-radius: 30px;
+    --background: #fff;
+               
+  img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  }

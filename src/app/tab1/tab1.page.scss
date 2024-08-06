@@ -1,0 +1,394 @@
+ion-content {
+  --background: #e8e8e8; 
+  
+}
+ion-toolbar{
+  --background: #fcfcfc;
+  color: #000000;
+}
+
+.Rechercher{
+      ion-searchbar {
+        --background: #ffffff;
+        color: #000;
+        }
+}
+.text-btn{
+  display: flex;
+  justify-content: space-between;
+}
+ .text{
+  padding-left: 20px;
+  ion-text{
+      color: #000;
+    
+ }
+ h5{
+  color: #000; 
+   font-size: 19px;
+   font-weight: bold;
+ }
+
+}
+.button {
+
+    position: relative;
+    right: 15px;
+    margin-top: 20px;
+
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(255, 255, 255);
+
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+
+
+ion-card{
+  border-radius: 30px;
+  --background: #fff;   
+
+ 
+}
+
+.row {
+  display: flex;
+  flex-direction: column; /* Adjust if necessary */
+  align-items: center;
+ 
+}
+.brands{
+  display: flex;
+  flex-direction: column; /* Adjust if necessary */
+  align-items: center;
+}
+.notes{
+  display: flex;
+  flex-direction: column; /* Adjust if necessary */
+  align-items: center;
+}
+
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 300px; /* Adjust the maximum width as per your design */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc; /* Optional: Add a border at the bottom of the image */
+}
+
+ion-card-content {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  color: #000;
+  font-weight: bold;
+}
+
+ion-card-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* src/app/app.component.scss */
+
+/* Media query for iPhone SE */
+@media screen and (max-width: 375px) {
+  .button {
+    padding-block: 0.3rem;
+    padding-inline: 0.8rem;
+    font-size: 13px;
+  }
+
+  ion-card-content {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  ion-card-content p {
+    font-size: 16px;
+  }
+
+  .text {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .text h5 {
+    font-size: 16px;
+  }
+
+  .brands,
+  .notes {
+    padding: 5% 0;
+  }
+}
+
+/* Media query for iPhone XR, iPhone 11 */
+@media screen and (min-width: 376px) and (max-width: 414px) {
+  .button {
+    padding-block: 0.4rem;
+    padding-inline: 1.1rem;
+    font-size: 14px;
+  }
+
+  ion-card-content {
+    font-size: 12px;
+    padding: 9px;
+    height: 43px;
+  }
+
+  ion-card-content p {
+    font-size: 12px;
+  }
+
+  .text {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .text h5 {
+    font-size: 18px;
+  }
+
+  .brands,
+  .notes {
+    padding: 5% 0;
+  }
+}
+
+/* Media query for iPhone 12 Mini, iPhone 13 Mini, iPhone 14 Mini (if exists) */
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .button {
+    padding-block: 0.5rem;
+    padding-inline: 1.2rem;
+    font-size: 20px;
+  }
+
+  ion-card-content {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  ion-card-content p {
+    font-size: 14px;
+  }
+
+  .text h5 {
+    font-size: 19px;
+  }
+
+  .notes {
+    padding: 5% 0;
+  }
+}
+
+/* Media query for Galaxy Fold unfolded state */
+@media screen and (max-width: 280px) {
+  .button {
+    padding-block: 0.2rem;
+    padding-inline: 0.4rem;
+    font-size: 12px;
+  }
+
+  ion-card-content {
+    padding: 8px;
+    line-height: 1.2;
+  }
+
+  ion-card-content p {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .text h5 {
+    font-size: 10px;
+  }
+
+  .notes {
+    padding: 5% 0;
+  }
+}
+
+/* Media query for iPad Mini, iPad Air, iPad Pro */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .button {
+    padding-block: 0.6rem;
+    padding-inline: 1.5rem;
+    font-size: 18px;
+  }
+
+  ion-card-content {
+    font-size: 13px;
+  }
+
+  ion-card-content p {
+    font-size: 16px;
+  }
+
+  .text h5 {
+    font-size: 22px;
+  }
+
+  .notes {
+    padding: 5% 0;
+  }
+}
+
+/* Media query for Surface Pro 7, larger screens */
+@media screen and (min-width: 1025px) {
+  .button {
+    padding-block: 0.7rem;
+    padding-inline: 1.7rem;
+    font-size: 20px;
+  }
+
+  ion-card-content {
+    font-size: 22px;
+    padding: 20px;
+  }
+
+  ion-card-content p {
+    font-size: 18px;
+  }
+
+  .text h5 {
+    font-size: 24px;
+  }
+
+  .notes {
+    padding: 5% 0;
+  }
+}
+
+
+
+/* Additional styling for Swiper pagination */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+
+  .swiper-pagination-bullet {
+    background-color: #007aff; /* Change the color of pagination bullets */
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50%;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #fff; /* Change the color of active pagination bullet */
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.pagination a:hover {
+  background-color: #ddd;
+}
+
+.pagination .active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination .disabled {
+  color: #999;
+  pointer-events: none;
+}
+

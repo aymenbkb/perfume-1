@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Good Flower</string>
+    <string name="title_activity_main">Good Flower</string>
+    <string name="package_name">com.goodflower</string> <!-- Update package_name to your new package name -->
+    <string name="custom_url_scheme">com.goodflower</string> <!-- Update custom_url_scheme to your new package name -->
+</resources>

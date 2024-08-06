@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tous les parfums
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="Rechercher">
+    <ion-searchbar placeholder="Recherche" [debounce]="1000" (ionInput)="handleInput($event); showItems()"></ion-searchbar>
+  <div *ngIf="showResults" >
+    <ion-item lines="none" *ngFor="let product of products">
+      <ion-avatar slot="start" (click)="clickCard(product.id)">
+        <img src="{{product.image}}">
+      </ion-avatar>
+      <ion-label>{{product.name}}</ion-label>
+    </ion-item>
+  </div>
+  </div>
+  <div class="row" >
+        <div class="card" *ngFor="let product of products">
+        <ion-card  (click)="clickCard(product.id)">
+          <img  class="img"  alt="{{product.name}}" src="{{product.image}}" />
+          <ion-card-content>
+            <p style="font-weight: 600;">{{product.name}}</p>
+          </ion-card-content>
+        </ion-card>
+      </div>  
+  </div>
+</ion-content>

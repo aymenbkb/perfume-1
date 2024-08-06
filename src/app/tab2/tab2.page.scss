@@ -1,0 +1,51 @@
+ion-content {
+  --background:#e8e8e8;  /* Replace with your desired background color */
+}
+ion-toolbar{
+  --background: #fcfcfc;
+  color: #000;
+}
+
+
+ion-searchbar {
+  --background: #ffffff; /* Replace with your desired background color */
+  color: #000;
+      overflow: hidden; padding-top: 10px;     margin-top: 4px;
+}
+.img{
+  width: 200px;
+  height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #ccc;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 48%; /* Adjust as needed */
+    margin-bottom: 20px;
+  
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  ion-card{
+    border-radius: 30px;
+    --background: #fff;
+  }
+  ion-card-content {
+    text-align: center;
+    padding: 12px;
+    color: #000;
+    font-weight: bold;
+  }
+  ion-card-content p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  

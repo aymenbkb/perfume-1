@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "prfumeapp",
   "version": "1.0.0",
   "description": "",
@@ -8,5 +9,41 @@
   },
   "keywords": [],
   "author": "",
+=======
+  "name": "Good Flower",
+  "version": "1.0.0",
+  "description": "Perfume application",
+  "main": "index.js",
+  "scripts": {
+    "start": "ionic serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint"
+  },
+  "dependencies": {
+    "@angular/common": "^18.1.3",
+    "@angular/compiler": "^18.1.3",
+    "@angular/core": "^18.1.3",
+    "@angular/fire": "^18.0.1",
+    "@angular/forms": "^18.1.3",
+    "@angular/platform-browser": "^18.1.3",
+    "@angular/router": "^18.1.3",
+    "@capacitor/android": "^6.1.1",
+    "@capacitor/core": "^6.1.1",
+    "@capacitor/ios": "^6.1.1",
+    "@ionic/angular": "^8.2.6",
+    "@ionic/angular-toolkit": "^11.0.1",
+    "firebase": "^10.12.5",
+    "swiper": "^11.1.9"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^18.1.3",
+    "@angular/cli": "^13.3.11",
+    "@angular/compiler-cli": "^18.1.3",
+    "@types/swiper": "^6.0.0",
+    "typescript": "^5.5.4"
+  },
+  "author": "Your Name",
+>>>>>>> master
   "license": "ISC"
 }
