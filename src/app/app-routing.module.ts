@@ -11,13 +11,14 @@ const routes: Routes = [
     redirectTo: '/tabs/tab1',
     pathMatch: 'full'
   },
-  // {
-  //   path : 'home',
-  //   loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-    
-  // },
-
-
+  {
+    path : 'home',
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+  },
+  {
+    path : 'filter',
+    loadChildren: () => import('./filter/filter.module').then(m => m.FilterModule)
+  },
 ];
 @NgModule({
   imports: [

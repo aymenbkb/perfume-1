@@ -1,0 +1,56 @@
+ion-content {
+    --background: #e8e8e8; 
+  }
+  
+.container {
+    padding: 16px;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 24px;
+      color: #333; // Couleur du texte du titre
+    }
+  
+    .sexe {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+  
+      .card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: scale(1.05); // Zoom sur la carte au survol
+        }
+  
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          transition: transform 0.3s ease;
+        }
+  
+        .title {
+          position: absolute;
+          bottom: 16px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.5); // Fond semi-transparent pour le titre
+          color: white; // Couleur du texte du titre
+          padding: 8px 0;
+          box-sizing: border-box;
+  
+          h3 {
+            margin: 0;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  

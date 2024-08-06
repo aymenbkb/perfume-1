@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bienvenue à Good Flower</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="scroll-container">
+    <!-- غلاف يمكن تمريره أفقياً -->
+    <div class="scroll-wrapper" #scrollWrapper (scroll)="onScroll()">
+      <!-- تكرار العناصر في المصفوفة pages -->
+      <div class="scroll-item" *ngFor="let page of pages; let i = index">
+        <div class="page page-{{i + 1}}">
+          <h2>{{ page.title }}</h2>
+          <div class="image">
+            <img [src]="page.image" alt="">
+          </div>
+          <p>{{ page.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- شريط التقدم لعرض نسبة التمرير -->
+  <ion-progress-bar [value]="progressValue" color="primary" class="progress-bar"></ion-progress-bar>
+</ion-content>
